@@ -1,0 +1,14 @@
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-item {
+  border: solid 2px #e4e7eb;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.hidden {
+  display: none;
+}
