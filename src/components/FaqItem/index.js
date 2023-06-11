@@ -8,11 +8,11 @@ const FaqItem = props => {
   }
 
   return (
-    <div className="faq-item">
+    <li className="faq-item">
       {console.log(isAnswerVisible)}
       <div className="question-container">
         <h1>{faq.questionText}</h1>
-        <button type="button" onClick={updateAnswerstatus}>
+        <button type="button" onClick={updateAnswerstatus} className="btn">
           <img
             src={
               isAnswerVisible
@@ -23,13 +23,10 @@ const FaqItem = props => {
           />
         </button>
       </div>
-      {/* <hr /> */}
-      {/* {isAnswerVisible && ( */}
       <div>
         <p className={isAnswerVisible ? '' : 'hidden'}>{faq.answerText}</p>
       </div>
-      {/* )} */}
-    </div>
+    </li>
   )
 }
 export default FaqItem

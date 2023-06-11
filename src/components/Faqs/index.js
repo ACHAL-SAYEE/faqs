@@ -24,21 +24,19 @@ class Faqs extends Component {
     // faqsList = []
     console.log(faqsList)
     return (
-      <li>
-        <div className="faqs">
-          <h1>FAQs</h1>
-          <ul>
-            {faqsList.map(faq => (
-              <FaqItem
-                faq={faq}
-                key={faq.id}
-                isAnswerVisible={isAnswerVisible[faq.id]}
-                updateAnswershownstatus={this.updateAnswershownstatus}
-              />
-            ))}
-          </ul>
-        </div>
-      </li>
+      <div className="faqs">
+        <h1>FAQs</h1>
+        <ul>
+          {faqsList.map(faq => (
+            <FaqItem
+              faq={faq}
+              key={faq.id}
+              isAnswerVisible={isAnswerVisible[faq.id]}
+              updateAnswershownstatus={this.updateAnswershownstatus}
+            />
+          ))}
+        </ul>
+      </div>
     )
   }
 }
